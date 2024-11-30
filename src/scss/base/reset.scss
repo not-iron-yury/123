@@ -92,11 +92,15 @@ input::-ms-clear {
 }
 
 button,
+input[type='button'],
 input[type='submit'] {
   display: inline-block;
-  box-shadow: none;
-  background-color: transparent;
+  border: none;
   background: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
   cursor: pointer;
 }
 

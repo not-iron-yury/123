@@ -1,0 +1,89 @@
+.btn {
+  border-radius: 4px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  // цвет
+  &_color_primary {
+    color: var(--white);
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+    @media (hover: hover) {
+      &:hover {
+        color: var(--white);
+        background-color: var(--primary-hover);
+      }
+    }
+    &:active {
+      color: var(--white);
+      background-color: var(--primary-hover);
+    }
+    &:disabled {
+      border: 1px solid var(--primary);
+      background-color: var(--primary);
+      opacity: 0.5;
+    }
+  }
+  &_color_transparent_primary {
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    @media (hover: hover) {
+      &:hover {
+        color: var(--white);
+        background-color: var(--primary);
+      }
+    }
+    &:active {
+      color: var(--white);
+      background-color: var(--primary);
+    }
+    &:disabled {
+      color: var(--primary);
+      border: 1px solid var(--primary);
+      background-color: transparent;
+      opacity: 0.5;
+    }
+  }
+  &_color_transparent_white {
+    color: var(--white);
+    border: 1px solid var(--white);
+    @media (hover: hover) {
+      &:hover {
+        color: var(--gray-900);
+        background-color: var(--white);
+      }
+    }
+    &:active {
+      color: var(--gray-900);
+      background-color: var(--white);
+    }
+    &:disabled {
+      color: var(--white);
+      background-color: transparent;
+      opacity: 0.5;
+    }
+  }
+
+  // размер
+  &_size_lage {
+    padding: 0px 40px;
+    font-size: 16px;
+    line-height: 325%;
+    letter-spacing: 0.03em;
+  }
+  &_size_regular {
+    padding: 0px 32px;
+    font-size: 14px;
+    line-height: 314%;
+    letter-spacing: 0.04em;
+  }
+  &_size_small {
+    padding: 0px 24px;
+    font-size: 12px;
+    line-height: 300%;
+    letter-spacing: 0.04em;
+  }
+}
