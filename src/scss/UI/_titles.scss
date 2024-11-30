@@ -1,0 +1,39 @@
+.title-42,
+.title-36,
+.title-32,
+.title-24,
+.title-20,
+.title-18 {
+  line-height: 140%;
+  color: var(--color-title);
+  &_white {
+    color: var(--color-white);
+  }
+}
+
+.title-42 {
+  font-size: clamp(2rem, 2vw + 1rem, 2.625rem); // 42px
+}
+.title-36 {
+  font-size: 36px;
+}
+.title-36_respon {
+  font-size: clamp(1.70rem, 2.5vw + 1rem, 2.25rem); //36px;
+}
+.title-32 {
+  font-size: 32px;
+}
+.title-24 {
+  font-size: 24px;
+}
+.title-20 {
+  font-size: 20px;
+}
+.title-18 {
+  font-size: 18px;
+  line-height: 150%;
+}
+.title-14 {
+  font-size: 14px;
+  color: var(--color-white);
+}

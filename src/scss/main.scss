@@ -1,0 +1,12 @@
+/* Base */
+@import './base/_reset.scss';
+@import './base/fonts.scss';
+@import './base/vars.scss';
+@import './base/base.scss';
+@import './base/utils.scss';
+
+/* UI */
+@import './UI/**/*.scss';
+
+/* Blocks */
+@import './blocks/**/*.scss';
