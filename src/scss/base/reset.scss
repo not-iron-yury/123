@@ -1,8 +1,10 @@
-/* Reset and base styles  */
 * {
-  padding: 0px;
-  margin: 0px;
-  border: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 *,
@@ -10,8 +12,6 @@
 *::after {
   box-sizing: border-box;
 }
-
-/* Links */
 
 a,
 a:link,
@@ -23,59 +23,60 @@ a:hover {
   text-decoration: none;
 }
 
-/* Common */
-
+article,
 aside,
-nav,
+details,
+figcaption,
+figure,
 footer,
 header,
-section,
-main {
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-ul,
-ul li {
-  list-style: none;
-}
-
 img,
-svg,
 picture {
   display: block;
   max-width: 100%;
   height: auto;
 }
+
 img,
 svg {
   width: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+q,
+blockquote {
+  quotes: none;
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 address {
   font-style: normal;
 }
 
-*:focus {
-  outline: none;
-}
-*:focus-visible {
-  outline: #4feeb4 solid 2px;
-  outline-offset: 2px;
-}
-
 /* Form */
-
 input,
 textarea,
 button,
@@ -125,4 +126,3 @@ legend {
   min-width: 0;
   border: none;
 }
-//==========================//
