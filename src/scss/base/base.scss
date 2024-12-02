@@ -4,8 +4,8 @@ body {
   justify-content: space-between;
   min-height: 100vh;
 
-  background-color: var(--color-bg);
-  color: var(--color-text);
+  background-color: var(--white);
+  color: var(--gray-900);
   font-family: var(--font-main);
 
   font-weight: 400;
@@ -19,5 +19,5 @@ body {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1310px; // 1280px
+  max-width: 1260px; // 1230px
 }
