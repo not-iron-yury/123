@@ -68,11 +68,29 @@
       opacity: 1;
       transition: opacity 0.33s ease;
     }
-    &:hover::before {
+
+    @media (hover: hover) {
+      &:hover::before {
+        background-color: var(--gray-900);
+        opacity: 0.6;
+      }
+    }
+    &:active::before {
       background-color: var(--gray-900);
       opacity: 0.6;
     }
-    &:hover {
+
+    @media (hover: hover) {
+      &:hover {
+        .ourservices__subtitle {
+          color: #ffffff;
+        }
+        .ourservices__icon {
+          fill: #ffffff;
+        }
+      }
+    }
+    &:active {
       .ourservices__subtitle {
         color: #ffffff;
       }
