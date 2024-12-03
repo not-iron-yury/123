@@ -29,7 +29,7 @@
 }
 
 .title-28 {
-  font-size: 28px;
+  font-size: clamp(1.25rem, 1vw + 1rem, 1.75rem); // 28px;
   line-height: 150%;
 }
 .title-24 {

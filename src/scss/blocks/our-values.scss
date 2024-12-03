@@ -1,12 +1,8 @@
 .ourvalues {
   padding-bottom: 28px;
 
-  &__title {
-    margin-bottom: 24px;
-  }
-
-  &__descr {
-    margin-bottom: 60px;
+  @media (max-width: 768px) {
+    padding-bottom: 0;
   }
 
   &__list {
@@ -29,10 +25,11 @@
     &:first-child {
       max-width: 379px;
       width: 100%;
-      padding-right: 6.4vw;
+      //padding-right: 6.4vw;
+      padding-right: 7.5%;
     }
     &:nth-child(2) {
-      padding: 0 6.4vw;
+      padding: 0 7.5%;
       width: 100%;
       border-left: 1px solid;
       border-right: 1px solid;
@@ -41,7 +38,7 @@
     &:last-child {
       max-width: 379px;
       width: 100%;
-      padding-left: 6.4vw;
+      padding-left: 7.5%;
     }
     @media (max-width: 768px) {
       grid-template-columns: 48px 1fr;

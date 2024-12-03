@@ -1,0 +1,12 @@
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
