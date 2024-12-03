@@ -69,18 +69,21 @@
 
   // размер
   &_size_lage {
+    height: 52px;
     padding: 0px 40px;
     font-size: 16px;
     line-height: 325%;
     letter-spacing: 0.03em;
   }
   &_size_regular {
+    height: 44px;
     padding: 0px 32px;
     font-size: 14px;
     line-height: 314%;
     letter-spacing: 0.04em;
   }
   &_size_small {
+    height: 36px;
     padding: 0px 24px;
     font-size: 12px;
     line-height: 300%;

@@ -1,0 +1,91 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 48px 45px;
+  width: 100%;
+
+  &_knowmore {
+    padding: 48px 60px;
+  }
+
+  @media (max-width: 1024px) {
+    max-width: 495px;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__wrapper {
+    &_knowmore {
+      width: 100%;
+      display: grid;
+      grid-template-columns: minmax(100px, 260px) minmax(100px, 260px) minmax(220px, 414px) 1fr;
+      gap: 24px;
+      align-items: center;
+
+      @media (max-width: 1024px) {
+        width: 100%;
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 20px;
+      }
+    }
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-800);
+
+    @media (max-width: 1024px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__input {
+    height: 44px;
+    padding: 11px 16px 11px;
+    border: 1px solid var(--gray-400);
+    border-radius: 4px;
+    background: var(--gray-200);
+
+    &::placeholder {
+      color: var(--gray-600);
+    }
+
+    &:focus {
+      outline: 1px solid var(--primary);
+      border: 1px solid var(--primary);
+    }
+  }
+
+  &__textarea::-webkit-scrollbar {
+    width: 0;
+  }
+  &__textarea {
+    overflow: -moz-scrollbars-none;
+  }
+
+  &__button {
+    max-width: 174px;
+    margin-top: 13px;
+    @media (max-width: 1024px) {
+      margin: 0 auto;
+    }
+  }
+
+  &__textarea {
+    &_knowmore {
+      @media (max-width: 1024px) {
+        height: 83px;
+      }
+    }
+  }
+}
