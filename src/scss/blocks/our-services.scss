@@ -11,12 +11,6 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  &__title {
-  }
-
-  &__descr {
-  }
-
   &__list {
     display: grid;
     grid-template-columns: repeat(4, minmax(176px, 285px));
