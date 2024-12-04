@@ -1,16 +1,9 @@
-.flex {
-  display: flex;
-  gap: 30px;
-}
-
 .product-card {
-  position: relative;
   max-width: 390px;
   height: 440px;
   overflow: hidden;
 
   &__content {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,13 +26,7 @@
     .product-card__content {
       height: 100%;
       background-color: #f7f7f7;
-      overflow: auto;
       transform: translateY(-78.4%);
-
-      scrollbar-width: none;
-      &::-webkit-scrollbar {
-        display: none;
-      }
     }
     .product-card__btn-close {
       display: inline-block;
