@@ -1,4 +1,4 @@
-.product-card {
+.project-card {
   position: relative;
   max-width: 390px;
   max-height: 440px;
@@ -38,12 +38,12 @@
   }
 
   &.active {
-    .product-card__content {
+    .project-card__content {
       height: 100%;
       background-color: #f7f7f7;
       transform: translateY(0);
     }
-    .product-card__btn-close {
+    .project-card__btn-close {
       display: inline-block;
     }
   }
