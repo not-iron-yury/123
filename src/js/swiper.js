@@ -4714,14 +4714,14 @@ var Swiper = (function () {
         0 !== t.length && ((t.innerHTML = ''), (t.innerHTML = e));
       }
       function c(e) {
-        (e = T(e)).forEach(e => {
-          e.setAttribute('tabIndex', '0');
-        });
+        // (e = T(e)).forEach(e => {
+        //   e.setAttribute('tabIndex', '0');
+        // });
       }
       function p(e) {
-        (e = T(e)).forEach(e => {
-          e.setAttribute('tabIndex', '-1');
-        });
+        // (e = T(e)).forEach(e => {
+        //   e.setAttribute('tabIndex', '-1');
+        // });
       }
       function u(e, t) {
         (e = T(e)).forEach(e => {
