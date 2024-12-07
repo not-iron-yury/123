@@ -40,6 +40,10 @@
 .title-20 {
   font-size: 20px;
   line-height: 150%;
+  @media (max-width: 960px) {
+    font-size: 18px;
+    line-height: 120%;
+  }
 }
 
 .text-18 {

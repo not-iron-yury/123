@@ -2,9 +2,11 @@ function productCardToggler() {
   const productCard = document.querySelectorAll('.product-card');
 
   if (productCard.length > 0) {
+    let key = 0;
     for (const card of productCard) {
-      card.onclick = openDescription;
-      card.querySelector('.product-card__btn-close').onclick = closeDescription;
+      card.addEventListener('click', openDescription);
+      card.addEventListener('focus', openDescription);
+      card.querySelector('.product-card__btn-close').addEventListener('click', closeDescription);
     }
   }
 
