@@ -1,0 +1,6 @@
+.partners-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 120px);
+  justify-content: space-between;
+  gap: 10px;
+}
