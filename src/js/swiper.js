@@ -6092,7 +6092,7 @@ var Swiper = (function () {
 
 if (document.querySelector('.swiper')) {
   // инициализация
-  var swiper = new Swiper('.projects-swiper__body', {
+  const projectsSwiper = new Swiper('.projects-swiper__body', {
     slidesPerView: 3,
     spaceBetween: 10,
     //loop: true,
@@ -6117,6 +6117,17 @@ if (document.querySelector('.swiper')) {
     navigation: {
       nextEl: '.projects-swiper__btn-next',
       prevEl: '.projects-swiper__btn-prev',
+    },
+  });
+
+  const feedbackSwiper = new Swiper('.feedback-swiper__body', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+
+    navigation: {
+      nextEl: '.feedback-swiper__btn-next',
+      prevEl: '.feedback-swiper__btn-prev',
     },
   });
 }
