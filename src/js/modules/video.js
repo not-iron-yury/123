@@ -2,7 +2,7 @@ function videoButtons() {
   const video = document.querySelector('.videoblock__video');
 
   if (video) {
-    const playButton = document.querySelector('.videoblock__play-btn');
+    const playButton = document.querySelector('.videoblock_--play-btn');
     const muteButton = document.querySelector('.videoblock__btn-muted');
     const overlay = document.querySelector('.videoblock');
 
