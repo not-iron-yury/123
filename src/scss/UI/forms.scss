@@ -1,30 +1,20 @@
 .form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 0 auto;
-  padding: 48px 45px;
-  width: 100%;
   background-color: #ffffff;
+
   @media (max-width: 1024px) {
     max-width: 495px;
   }
-
-  &__title {
-    margin-bottom: 32px;
+  &__body {
+    justify-content: center;
   }
-
   &__label {
     display: flex;
     flex-direction: column;
-    margin-bottom: 8px;
-
+    gap: 8px;
     font-size: 14px;
     line-height: 150%;
     color: var(--gray-800);
-    @media (max-width: 1024px) {
-      margin-bottom: 0;
-    }
   }
 
   &__input {
@@ -50,21 +40,67 @@
     overflow: -moz-scrollbars-none;
   }
 
+  &__checkbox-label {
+    display: flex;
+    align-items: start;
+    gap: 12px;
+
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-800);
+  }
+
+  &__checkbox {
+    flex-shrink: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    position: relative;
+    top: 4px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--gray-500);
+    border-radius: 2px;
+    background-color: #fff;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+
+    &:checked {
+      background-color: var(--primary);
+      border-color: var(--primary);
+    }
+
+    &:checked::before {
+      content: '';
+      position: absolute;
+      color: #fff;
+      width: 16px;
+      height: 16px;
+      font-size: 16px;
+      left: 1px;
+      top: 2px;
+      background: url('/img/svg/checkmark.svg') no-repeat;
+    }
+  }
+
   &__button {
     max-width: 174px;
-    margin-top: 13px;
-    @media (max-width: 1024px) {
-      margin: 0 auto;
-    }
+    margin: 0 auto;
   }
 }
 
 .linear-form {
-  position: relative;
-  top: 92px;
-  padding: 48px 60px;
+  padding: 48px 45px;
+  @media (max-width: 480px) {
+    padding: 48px 15px;
+  }
 
-  &__wrapper {
+  &__title {
+    margin-bottom: 32px;
+  }
+  &__body {
     width: 100%;
     display: grid;
     grid-template-columns: minmax(100px, 260px) minmax(100px, 260px) minmax(220px, 414px) 1fr;
@@ -72,7 +108,6 @@
     align-items: center;
 
     @media (max-width: 1024px) {
-      width: 100%;
       grid-template-columns: 1fr;
       align-items: center;
       gap: 20px;
@@ -81,6 +116,33 @@
   &__textarea {
     @media (max-width: 1024px) {
       height: 83px;
+    }
+  }
+  &__button {
+    align-self: flex-end;
+  }
+}
+
+.discuss-form {
+  padding: 48px 45px;
+  @media (max-width: 480px) {
+    padding: 48px 15px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__textarea {
+    height: 66px;
+    @media (max-width: 768px) {
+      height: 99px;
     }
   }
 }
