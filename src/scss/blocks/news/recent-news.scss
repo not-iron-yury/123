@@ -24,6 +24,7 @@
     width: 100%;
     grid-column: span 5;
     grid-row: span 1;
+
     & .news-card__img {
       max-height: 155px;
     }
@@ -57,20 +58,30 @@
         }
       }
     }
+
+    @media (hover: hover) {
+      &:hover {
+        & h3 {
+          color: var(--primary);
+        }
+      }
+    }
+    &:active {
+      & h3 {
+        color: var(--primary);
+      }
+    }
   }
 }
 
 .news-card {
-  @media (max-width: 960px) {
-    //display: flex;
-  }
-
   &__content {
     padding: 16px 24px 24px;
   }
 
   &__title {
     margin-bottom: 8px;
+    transition: color 0.25s ease;
   }
   &__img {
     object-fit: cover;
