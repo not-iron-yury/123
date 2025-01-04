@@ -34,4 +34,25 @@
     height: 16px;
     fill: var(--gray-700);
   }
+
+  &--youtube,
+  &--whatsapp,
+  &--messanger,
+  &--facebook,
+  &--twitter {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: 1;
+      }
+    }
+    &:active {
+      opacity: 1;
+    }
+  }
 }
