@@ -90,6 +90,10 @@
       text-align: start;
       margin-bottom: 0;
     }
+    @media (max-width: 480px) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__subdescr {
@@ -99,6 +103,9 @@
 
     @media (max-width: 768px) {
       max-width: 100%;
+    }
+    @media (max-width: 480px) {
+      text-align: center;
     }
   }
 }

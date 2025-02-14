@@ -49,6 +49,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: opacity 1s ease;
 
     &::before {
       content: '';
@@ -60,7 +61,7 @@
       background-color: #ffffff;
       background-repeat: no-repeat;
       opacity: 1;
-      transition: opacity 0.33s ease;
+      transition: opacity 1s ease;
     }
 
     @media (hover: hover) {
@@ -109,7 +110,7 @@
     width: 100%;
     margin-bottom: 24px;
     z-index: 10;
-    transition: fill 0.33s ease;
+    transition: fill 0.4s ease;
     @media (max-width: 480px) {
       margin-bottom: 0;
       margin-right: 20px;
@@ -118,7 +119,7 @@
   &__subtitle {
     text-align: center;
     z-index: 10;
-    transition: color 0.33s ease;
+    transition: color 0.5s ease;
     @media (max-width: 480px) {
       text-align: left;
     }
